@@ -1,0 +1,24 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>无标题文档</title>
+<style>
+	.a{ color:red;}
+	.b{ font-size:30px;}
+	.c{ font-weight:bold;}
+</style>
+<script>
+	window.onload = function(){
+		var oDiv = document.querySelector('div');
+		document.onclick = function(){
+			oDiv.classList.toggle('a');
+		}	
+	};
+</script>
+</head>
+
+<body>
+<div class="a b c">你好</div>
+</body>
+</html>

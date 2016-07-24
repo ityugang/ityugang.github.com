@@ -1,0 +1,28 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>无标题文档</title>
+<style>
+	*{ margin:0;padding:0;}
+	div{ width:200px; height:200px; background:red; position:absolute; left:0; top:0;}
+</style>
+<script>
+	window.onload = function(){
+		var oBox = document.querySelector('div');
+		oBox.onclick = function(){
+			oBox.style.WebkitTransition = '1s all ease';
+			oBox.style.MozTransition = '1s all ease';
+			oBox.style.smTransition = '1s all ease';
+			oBox.style.OTransition = '1s all ease';
+			oBox.style.Transition = '1s all ease';	
+			oBox.style.left = '500px';
+		};	
+	};
+</script>
+</head>
+
+<body>
+<div></div>
+</body>
+</html>
